@@ -3,8 +3,7 @@ import java.text.DecimalFormat;
 
 public class ShapePrinter {
 
-    //методы должны начинатся с маленькой буквы
-    public static void PrintInfo(Shape shape) {
+    public static void printInfo(Shape shape) {
         shape.draw();
         System.out.print("My area " + round(shape.area()) + " and my perimeter " + round(shape.perimeter()));
     }

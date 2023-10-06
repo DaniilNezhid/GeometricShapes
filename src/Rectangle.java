@@ -1,49 +1,47 @@
 public class Rectangle extends Polygon{
-
-//    все поля с маленькой буквы и с полноноценным названием
-    private double A;
-    private double B;
+    private double sideA;
+    private double sideB;
     private final static int SIDES = 4;
 
-    public Rectangle(double A, double B) {
+    public Rectangle(double sideA, double sideB) {
         super(SIDES);
-        this.A=A;
-        this.B=B;
+        this.sideA=sideA;
+        this.sideB=sideB;
     }
-    public Rectangle(double A){
+    public Rectangle(double sideA){
         super(SIDES);
-        this.A=A;
-        this.B=A;
+        this.sideA=sideA;
+        this.sideB=sideA;
     }
     @Override
     public double area() {
-        return A*B;
+        return sideA*sideB;
     }
 
     @Override
     public double perimeter() {
-        return (A+B)*2;
+        return (sideA+sideB)*2;
     }
 
     @Override
     public void draw() {
-        if (A == B) {
+        if (sideA == sideB) {
             System.out.println("Im " + Shapes.SQUARE);
         } else {
             System.out.println("Im " + Shapes.RECTANGLE);
         }
     }
 
-    public void setA(double A){
-        this.A=A;
+    public void setA(double sideA){
+        this.sideA=sideA;
     }
     public double getA(){
-        return A;
+        return sideA;
     }
-    public void setB(double B){
-        this.B=B;
+    public void setB(double sideB){
+        this.sideB=sideB;
     }
     public double getB(){
-        return B;
+        return sideB;
     }
 }

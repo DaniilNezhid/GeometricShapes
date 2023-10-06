@@ -1,9 +1,9 @@
 public class Square extends Rectangle{
 
-    //   изменить  название переменной на понятное
+   private final static int SIDES = 4;
 
-    public Square(double A) {
-        super(A);
+    public Square(double sideA) {
+        super(SIDES);
     }
 
     @Override

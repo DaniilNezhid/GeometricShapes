@@ -5,9 +5,9 @@ public class Main {
         Rectangle square = new Square(10);
         Circle circle = new Circle(30);
 
-        ShapePrinter.PrintInfo(triangle);
-        ShapePrinter.PrintInfo(rectangle);
-        ShapePrinter.PrintInfo(square);
-        ShapePrinter.PrintInfo(circle);
+        ShapePrinter.printInfo(triangle);
+        ShapePrinter.printInfo(rectangle);
+        ShapePrinter.printInfo(square);
+        ShapePrinter.printInfo(circle);
     }
 }

@@ -7,8 +7,8 @@ public class Circle implements Shape{
     @Override
     public double area() {
         // нужно правильно называть поля что бы было понятно
-        double s = Math.pow(radius,2);
-        return (Math.PI*s);
+        double area = Math.pow(radius,2);
+        return (Math.PI*area);
     }
 
     @Override

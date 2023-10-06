@@ -1,24 +1,25 @@
 public class Triangle extends Polygon {
-    private double A;
-    private double B;
-    private double C;
+    private double sideA;
+    private double sideB;
+    private double sideC;
+    private final static int SIDES = 3;
 
-    public Triangle(double A, double B, double C) {
-        super(3);
-        this.C = C;
-        this.A = A;
-        this.B = B;
+    public Triangle(double sideA, double sideB, double sideC) {
+        super(SIDES);
+        this.sideC = sideC;
+        this.sideA = sideA;
+        this.sideB = sideB;
     }
 
     @Override
     public double area() {
-        double s = (A + B + C) / 2;
-        return Math.sqrt(s * (s - A) * (s - B) * (s - C));
+        double area = (sideA + sideB + sideC) / 2;
+        return Math.sqrt(area * (area - sideA) * (area - sideB) * (area - sideC));
     }
 
     @Override
     public double perimeter() {
-        return A + B + C;
+        return sideA + sideB + sideC;
     }
 
     @Override
@@ -26,27 +27,27 @@ public class Triangle extends Polygon {
         System.out.println("Im " + Shapes.TRIANGLE);
     }
 
-    public void setA(double A) {
-        this.A = A;
+    public void setA(double sideA) {
+        this.sideA = sideA;
     }
 
     public double getA() {
-        return A;
+        return sideA;
     }
 
-    public void setB(double B) {
-        this.B = B;
+    public void setB(double sideB) {
+        this.sideB = sideB;
     }
 
     public double getB() {
-        return B;
+        return sideB;
     }
 
-    public void setC(double C) {
-        this.C = C;
+    public void setC(double sideC) {
+        this.sideC = sideC;
     }
 
     public double getC() {
-        return C;
+        return sideC;
     }
 }
