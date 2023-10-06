@@ -1,4 +1,7 @@
 public class Square extends Rectangle{
+
+    //   изменить  название переменной на понятное
+
     public Square(double A) {
         super(A);
     }
