@@ -27,27 +27,27 @@ public class Triangle extends Polygon {
         System.out.println("Im " + Shapes.TRIANGLE);
     }
 
-    public void setA(double sideA) {
+    public void setSideA(double sideA) {
         this.sideA = sideA;
     }
 
-    public double getA() {
+    public double getSideA() {
         return sideA;
     }
 
-    public void setB(double sideB) {
+    public void setSideB(double sideB) {
         this.sideB = sideB;
     }
 
-    public double getB() {
+    public double getSideB() {
         return sideB;
     }
 
-    public void setC(double sideC) {
+    public void setSideC(double sideC) {
         this.sideC = sideC;
     }
 
-    public double getC() {
+    public double getSideC() {
         return sideC;
     }
 }
